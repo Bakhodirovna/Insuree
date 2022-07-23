@@ -1,0 +1,303 @@
+// section1 style
+.dnone{
+    display: none;
+}
+.hero{
+    position: relative;
+    margin-top: 143px;
+    background-color: #2D2641;
+    padding: 88px 85px;
+    padding-bottom: 120px;
+    display: flex;
+    height: 635px;
+&__line{
+    height: 2px;
+    width: 150px;
+    background-color: white;
+    z-index: 9;
+}
+&__title{
+    color: #FEFCF7;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: #FFFFFF;  
+    width: 531px;  
+}
+&__text{
+    width: 540px;
+    font-family: 'Karla',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF; 
+}
+&__info{
+    display: flex;
+    flex-direction: column;
+}
+&__btn{
+    border: 1.5px solid #FFFFFF;
+    font-family: 'Karla',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;    
+    padding: 13px 28px;
+    width: 177px;
+    margin-top: 24px;
+    background-color: transparent;
+    &:hover{
+        box-shadow: 0 0 3px 2px white;
+        cursor: pointer;
+    }
+}
+&__box{
+    display: flex;
+    &::after{
+        content: url(../../images/insurance.png);
+        border-radius:10px;
+        margin-left: 129px;
+        
+    }
+}
+
+}
+// section2 style
+.different{
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 1260px;
+    &__line{
+        height: 2px;
+        width: 150px;
+        background-color: #C396C6
+    }
+    &__title{
+        font-family: 'DM Serif Display',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 64px;
+        letter-spacing: -1px;
+        color: #2C2830;
+        
+    }
+    &__list{
+        list-style: none;
+        display: flex;
+        margin-left: -38px;
+    &>li>h3{
+        font-family: 'DM Serif Display',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: -0.388889px;
+        color: #2C2830;        
+    }
+    &>li>p{
+        font-family: 'Karla',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #837D88;    
+        width: 350px;    
+    }
+    &>li+li{
+        margin-left: 30px;
+    }
+    }
+    &__item1::before{
+        content: url(../../images/snappy.svg);
+    }
+    &__item2::before{
+        content: url(../../images/prices.svg);
+    }
+    &__item3::before{
+        content: url(../../images/people.svg);
+    }
+}
+// section3 style
+.work{
+    background-color: #2D2641;
+    margin-top: 158px;
+    padding: 50px 81px;
+    width: 1260px;
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title{
+        font-family: 'DM Serif Display',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 56px;
+        letter-spacing: -0.777778px;
+        color: #FFFFFF;
+        width: 524px;
+    }
+}
+
+@media screen and (max-width:610px){
+    .hero{
+        margin-top: 143px;
+        background-color: #2D2641;
+        padding: 93px 23px;
+        display: flex;
+        flex-direction: column-reverse;
+        min-height: 635px;
+        margin-top: 700px;
+    &__line{
+        display: none;
+    }
+    &__title{
+        color: #FEFCF7;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: -0.666667px;
+        color: #FFFFFF;
+        width: 327px;
+    }
+    &__text{
+        width: 327px;
+        font-family: 'Karla',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: -22px;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &::before{
+            position: absolute;
+            content: url(../../images/insurance.png);
+            border-radius:10px;
+            top: -650px;
+            
+        }
+    }
+    &__btn{
+        border: 1.5px solid #FFFFFF;
+        font-family: 'Karla',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 1.5px;
+        color: #FFFFFF;    
+        padding: 13px 28px;
+        width: 177px;
+        margin-top: 24px;
+        background-color: transparent;
+        &:hover{
+            box-shadow: 0 0 3px 2px white;
+            cursor: pointer;
+        }
+    }
+    &__box{
+        // display: flex;
+        
+        &::after{
+            display: none;
+            
+        }
+    }
+
+    
+    }
+
+
+    .different{
+        margin-top: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 610px;
+        &__line{
+            height: 2px;
+            width: 150px;
+            background-color: #C396C6
+        }
+        &__title{
+            font-family: 'DM Serif Display',sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -0.666667px;
+            color: #2C2830;
+            text-align: center;
+        }
+        &__list{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &>li{
+                display: flex;
+                align-items: center;
+                flex-direction:column ;
+            }
+        &>li>h3{
+            font-family: 'DM Serif Display',sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 38px;
+            letter-spacing: -0.388889px;
+            color: #2C2830;       
+            text-align: center; 
+        }
+        &>li>p{
+            font-family: 'Karla',sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #837D88;    
+            width: 327px;   
+            text-align: center; 
+        }
+        &>li+li{
+            margin-top: 50px;
+        }
+        }
+        &__item1::before{
+            content: url(../../images/snappy.svg);
+            // margin-left: 110px;
+        }
+        &__item2::before{
+            content: url(../../images/prices.svg);
+            // margin-left: 110px;
+        }
+        &__item3::before{
+            content: url(../../images/people.svg);
+            // margin-left: 110px;
+        }
+    }
+}
